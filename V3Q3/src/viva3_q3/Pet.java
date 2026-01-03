@@ -37,25 +37,11 @@ public class Pet {
                 ", Adopter Name: " + adopterName;
     }
     //Getters
-    public String getName(){
-        return name;
-    }
-    public String getSpecies(){
-        return species;
-    }
-    public String getBreed(){
-        return breed;
-    }
-    public int getAge(){
-        return age;
-    }
-    public String getHealthRecord(){
-        return healthRecord;
-    }
-    public boolean isAdopted(){
-        return isAdopted;
-    }
-    public String getAdopterName(){
-        return adopterName;
-    }
+    public String getName(){return name;}
+    public String getSpecies(){return species;}
+    public String getBreed(){return breed;}
+    public int getAge(){return age;}
+    public String getHealthRecord(){return healthRecord;}
+    public boolean getIsAdopted(){return isAdopted;}
+    public String getAdopterName(){return adopterName;}
 }
