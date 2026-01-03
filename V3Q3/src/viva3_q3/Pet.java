@@ -34,7 +34,7 @@ public class Pet {
                 ", Age: " + age +
                 ", Health Record: " + healthRecord +
                 ", Adpoted: " + isAdopted +
-                ", Adopter Name: " + adopterName
+                ", Adopter Name: " + adopterName;
     }
     //Getters
     public String getName(){
