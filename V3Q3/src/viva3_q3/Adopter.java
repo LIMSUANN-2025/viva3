@@ -24,11 +24,15 @@ public class Adopter {
 
         for (Pet pet : center.getAllPets()) {
             if (!pet.getIsAdopted() && pet.getSpecies().equalsIgnoreCase(preferredSpecies) && pet.getAge() >= minAge && pet.getAge() <= maxAge) {
-                System.out.println("Matching pets for" + adopterName + ":");
+
+                if (!found) {
+                    System.out.println("Matching pets for " + adopterName + ":");
+                    found = true; // Switch it to true so the header doesn't print again
+                }
                 System.out.println(pet.getDetails());
             }
         }
-        if (!found) {
+        if (!found) { //if found is NOT True
             System.out.println("No matching pets found.");
         }
     }

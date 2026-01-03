@@ -36,6 +36,7 @@ public class PetAdoptionCenter {
             if (p.getIsAdopted() == false){
                 System.out.println(p.getDetails());
             }
+            System.out.println();
         }
     }
 
@@ -43,7 +44,7 @@ public class PetAdoptionCenter {
     public void adoptPet(Pet pet,Adopter adopter) {
         if (pet !=null && !pet.getIsAdopted()){
             pet.adopt(adopter.getAdopterName());
-            System.out.println(pet.getAdopterName() + "adopted" + pet.getName());
+            System.out.println(pet.getAdopterName() + " adopted " + pet.getName());
         }else {
             System.out.println("Pet not available for adoption");
         }

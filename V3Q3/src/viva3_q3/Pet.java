@@ -29,12 +29,12 @@ public class Pet {
     //to get pet details
     public String getDetails(){
         return "Name: " + name +
-                ", Species: " + species +
-                ", Breed: " + breed +
-                ", Age: " + age +
-                ", Health Record: " + healthRecord +
-                ", Adpoted: " + isAdopted +
-                ", Adopter Name: " + adopterName;
+                "\nSpecies: " + species +
+                "\nBreed: " + breed +
+                "\nAge: " + age +
+                "\nHealth Record: " + healthRecord +
+                "\nAdpoted: " + isAdopted +
+                "\nAdopter Name: " + adopterName;
     }
     //Getters
     public String getName(){return name;}
