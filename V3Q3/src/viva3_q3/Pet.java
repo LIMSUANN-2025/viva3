@@ -28,12 +28,13 @@ public class Pet {
 
     //to get pet details
     public String getDetails(){
+        String status = (this.isAdopted) ? "Adopted" : "Not Adopted";
         return "Name: " + name +
                 "\nSpecies: " + species +
                 "\nBreed: " + breed +
                 "\nAge: " + age +
                 "\nHealth Record: " + healthRecord +
-                "\nAdpoted: " + isAdopted +
+                "\nAdpoted: " + status +
                 "\nAdopter Name: " + adopterName;
     }
     //Getters
